@@ -1,6 +1,6 @@
-var button = document.getElementById('normalWalk')
+var start = window.confirm('I made a short text game. Would you like to play?')
 
-button.addEventListener('click', function () {
+if (start) {
   var direction = window.prompt('If you had to pick a direction to walk ' +
   'what way would it be? ' + '(Left, Right, or Straight?)')
   if (direction) {
@@ -84,4 +84,6 @@ button.addEventListener('click', function () {
   } else {
     window.alert('Whoops.. you did something you shouldn\'t have.')
   }
-})
+} else {
+  window.alert('Darn.. We looks like you\'re going to miss out!')
+}
